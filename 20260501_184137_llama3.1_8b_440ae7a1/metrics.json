@@ -1,0 +1,442 @@
+{
+  "meta": {
+    "timestamp": 1777682493.7906642,
+    "timestamp_iso": "2026-05-02T00:41:33Z",
+    "topic": "Dark Matter/Energy Existance",
+    "model": "llama3.1:8b",
+    "max_tokens": 8192,
+    "profile": "standard@1.00",
+    "density_multiplier": 1.0,
+    "temperatures": [
+      0.3,
+      0.7,
+      1.1
+    ]
+  },
+  "embedding": {
+    "model_name": "BAAI/bge-large-en-v1.5",
+    "embedding_dim": 1024,
+    "max_tokens": 512,
+    "device": "cpu:0 (Unknown CPU)",
+    "batch_size": 16,
+    "is_bge": true
+  },
+  "summary": {
+    "total_count": 348,
+    "valid_count": 348,
+    "invalid_count": 0,
+    "validity_rate": 1.0,
+    "strategy_counts": {
+      "complementary_analytic": 15,
+      "complementary_synthetic": 15,
+      "complementary_relational": 15,
+      "complementary_associative": 15,
+      "complementary_algorithmic": 15,
+      "complementary_abstract": 15,
+      "complementary_reductionist": 15,
+      "complementary_dialectical": 15,
+      "complementary_factual": 15,
+      "complementary_counterfactual": 15,
+      "baseline": 15,
+      "adversarial_pressure": 9,
+      "adversarial_overconfidence": 9,
+      "adversarial_correction": 9,
+      "adversarial_contradiction_resistance": 9,
+      "adversarial_sycophancy_test": 9,
+      "adversarial_confidence_calibration": 9,
+      "multiturn_step_1": 3,
+      "multiturn_step_2": 3,
+      "multiturn_step_3": 3,
+      "meta_uncertainty_audit": 21,
+      "meta_assumption_extraction": 21,
+      "meta_weakness_analysis": 21,
+      "meta_alternative_paths": 21,
+      "meta_error_modes": 18,
+      "meta_knowledge_boundaries": 18
+    },
+    "category_counts": {
+      "complementary": 150,
+      "baseline": 15,
+      "adversarial": 54,
+      "multiturn": 9,
+      "meta": 120
+    },
+    "error_counts": {},
+    "mean_latency_ms": 152643.17616213506,
+    "mean_response_length": 3575,
+    "mean_self_score": 0.012643678160919538
+  },
+  "semantic_metrics": {
+    "global": {
+      "instability": 0.20444784219905676,
+      "nonlocality": 0.7978475689888,
+      "fragmentation": 0.0028770046774297953,
+      "centroid_idx": 215
+    },
+    "per_strategy": {
+      "adversarial_confidence_calibration": {
+        "instability": 0.09394334689176975,
+        "nonlocality": 0.9064411520957947,
+        "fragmentation": 0.0004241852730046958,
+        "centroid_idx": 5,
+        "count": 9
+      },
+      "adversarial_contradiction_resistance": {
+        "instability": 0.10837305274213527,
+        "nonlocality": 0.8922663927078247,
+        "fragmentation": 0.0007166530704125762,
+        "centroid_idx": 8,
+        "count": 9
+      },
+      "adversarial_correction": {
+        "instability": 0.09462632956721406,
+        "nonlocality": 0.9055026173591614,
+        "fragmentation": 0.000142403703648597,
+        "centroid_idx": 8,
+        "count": 9
+      },
+      "adversarial_overconfidence": {
+        "instability": 0.07886053734947418,
+        "nonlocality": 0.9215483069419861,
+        "fragmentation": 0.00044364933273755014,
+        "centroid_idx": 3,
+        "count": 9
+      },
+      "adversarial_pressure": {
+        "instability": 0.07393383455365732,
+        "nonlocality": 0.926337480545044,
+        "fragmentation": 0.0002928901230916381,
+        "centroid_idx": 0,
+        "count": 9
+      },
+      "adversarial_sycophancy_test": {
+        "instability": 0.09933653296050748,
+        "nonlocality": 0.9011059999465942,
+        "fragmentation": 0.000491099723149091,
+        "centroid_idx": 6,
+        "count": 9
+      },
+      "baseline": {
+        "instability": 0.08444618139789173,
+        "nonlocality": 0.9159145355224609,
+        "fragmentation": 0.00039383250987157226,
+        "centroid_idx": 13,
+        "count": 15
+      },
+      "complementary_abstract": {
+        "instability": 0.11937468500360504,
+        "nonlocality": 0.882533073425293,
+        "fragmentation": 0.002161684911698103,
+        "centroid_idx": 3,
+        "count": 15
+      },
+      "complementary_algorithmic": {
+        "instability": 0.08167693796489572,
+        "nonlocality": 0.9186649918556213,
+        "fragmentation": 0.00037220295052975416,
+        "centroid_idx": 7,
+        "count": 15
+      },
+      "complementary_analytic": {
+        "instability": 0.09758859570891443,
+        "nonlocality": 0.9028893709182739,
+        "fragmentation": 0.000529374519828707,
+        "centroid_idx": 0,
+        "count": 15
+      },
+      "complementary_associative": {
+        "instability": 0.11545666558584988,
+        "nonlocality": 0.885065495967865,
+        "fragmentation": 0.0005899693933315575,
+        "centroid_idx": 3,
+        "count": 15
+      },
+      "complementary_counterfactual": {
+        "instability": 0.08608527253471032,
+        "nonlocality": 0.9143869280815125,
+        "fragmentation": 0.0005164122558198869,
+        "centroid_idx": 6,
+        "count": 15
+      },
+      "complementary_dialectical": {
+        "instability": 0.09443841828932475,
+        "nonlocality": 0.9059295654296875,
+        "fragmentation": 0.000406194623792544,
+        "centroid_idx": 6,
+        "count": 15
+      },
+      "complementary_factual": {
+        "instability": 0.08508333997088391,
+        "nonlocality": 0.9152238368988037,
+        "fragmentation": 0.0003356303204782307,
+        "centroid_idx": 1,
+        "count": 15
+      },
+      "complementary_reductionist": {
+        "instability": 0.10264976277038185,
+        "nonlocality": 0.8978224992752075,
+        "fragmentation": 0.0005260082543827593,
+        "centroid_idx": 7,
+        "count": 15
+      },
+      "complementary_relational": {
+        "instability": 0.09422823195816732,
+        "nonlocality": 0.9062544107437134,
+        "fragmentation": 0.0005325686652213335,
+        "centroid_idx": 13,
+        "count": 15
+      },
+      "complementary_synthetic": {
+        "instability": 0.1059185085436326,
+        "nonlocality": 0.8951449990272522,
+        "fragmentation": 0.001188084133900702,
+        "centroid_idx": 9,
+        "count": 15
+      },
+      "meta_alternative_paths": {
+        "instability": 0.08730620083108398,
+        "nonlocality": 0.9132818579673767,
+        "fragmentation": 0.0006438962882384658,
+        "centroid_idx": 16,
+        "count": 21
+      },
+      "meta_assumption_extraction": {
+        "instability": 0.1208315713664816,
+        "nonlocality": 0.8802328109741211,
+        "fragmentation": 0.0012092054821550846,
+        "centroid_idx": 6,
+        "count": 21
+      },
+      "meta_error_modes": {
+        "instability": 0.09565280547411259,
+        "nonlocality": 0.9049888253211975,
+        "fragmentation": 0.0007089930586516857,
+        "centroid_idx": 4,
+        "count": 18
+      },
+      "meta_knowledge_boundaries": {
+        "instability": 0.07904454137573402,
+        "nonlocality": 0.9213647842407227,
+        "fragmentation": 0.00044426010572351515,
+        "centroid_idx": 8,
+        "count": 18
+      },
+      "meta_uncertainty_audit": {
+        "instability": 0.0835240158715147,
+        "nonlocality": 0.9169571399688721,
+        "fragmentation": 0.0005247310036793351,
+        "centroid_idx": 16,
+        "count": 21
+      },
+      "meta_weakness_analysis": {
+        "instability": 0.06774293350246885,
+        "nonlocality": 0.9326944947242737,
+        "fragmentation": 0.0004689941124524921,
+        "centroid_idx": 15,
+        "count": 21
+      },
+      "multiturn_step_1": {
+        "instability": 0.10315448940952521,
+        "nonlocality": 0.8973857760429382,
+        "fragmentation": 0.0006020436994731426,
+        "centroid_idx": 2,
+        "count": 3
+      },
+      "multiturn_step_2": {
+        "instability": 0.09370710282856587,
+        "nonlocality": 0.9063464999198914,
+        "fragmentation": 5.9141562815057114e-05,
+        "centroid_idx": 2,
+        "count": 3
+      },
+      "multiturn_step_3": {
+        "instability": 0.08796005259653039,
+        "nonlocality": 0.9120925068855286,
+        "fragmentation": 5.762516593676992e-05,
+        "centroid_idx": 0,
+        "count": 3
+      }
+    },
+    "per_category": {
+      "adversarial": {
+        "instability": 0.11995467565317586,
+        "nonlocality": 0.8809511661529541,
+        "fragmentation": 0.001028254278935492,
+        "centroid_idx": 27,
+        "count": 54
+      },
+      "baseline": {
+        "instability": 0.08444618139789173,
+        "nonlocality": 0.9159145355224609,
+        "fragmentation": 0.00039383250987157226,
+        "centroid_idx": 13,
+        "count": 15
+      },
+      "complementary": {
+        "instability": 0.1836529373277377,
+        "nonlocality": 0.8185063004493713,
+        "fragmentation": 0.002638022182509303,
+        "centroid_idx": 11,
+        "count": 150
+      },
+      "meta": {
+        "instability": 0.17474802683564894,
+        "nonlocality": 0.8274385929107666,
+        "fragmentation": 0.002642636885866523,
+        "centroid_idx": 107,
+        "count": 120
+      },
+      "multiturn": {
+        "instability": 0.13040822654790196,
+        "nonlocality": 0.8702250719070435,
+        "fragmentation": 0.0007277409895323217,
+        "centroid_idx": 6,
+        "count": 9
+      }
+    },
+    "displacement_from_baseline": {
+      "adversarial_confidence_calibration": 0.4685365855693817,
+      "adversarial_contradiction_resistance": 0.3910841941833496,
+      "adversarial_correction": 0.45328855514526367,
+      "adversarial_overconfidence": 0.38282331824302673,
+      "adversarial_pressure": 0.3906760811805725,
+      "adversarial_sycophancy_test": 0.4055732190608978,
+      "complementary_abstract": 0.5285354256629944,
+      "complementary_algorithmic": 0.6109496355056763,
+      "complementary_analytic": 0.45381292700767517,
+      "complementary_associative": 0.627322793006897,
+      "complementary_counterfactual": 0.5682790875434875,
+      "complementary_dialectical": 0.5846059322357178,
+      "complementary_factual": 0.37411513924598694,
+      "complementary_reductionist": 0.5130678415298462,
+      "complementary_relational": 0.5436700582504272,
+      "complementary_synthetic": 0.5188300013542175,
+      "meta_alternative_paths": 0.6686735153198242,
+      "meta_assumption_extraction": 0.6503784656524658,
+      "meta_error_modes": 0.7292356491088867,
+      "meta_knowledge_boundaries": 0.6220356822013855,
+      "meta_uncertainty_audit": 0.6487877368927002,
+      "meta_weakness_analysis": 0.6757160425186157,
+      "multiturn_step_1": 0.4105665683746338,
+      "multiturn_step_2": 0.46524643898010254,
+      "multiturn_step_3": 0.5031282901763916
+    }
+  },
+  "lexical_metrics": {
+    "instability": 0.829345166683197,
+    "semantic_divergence": 0.6271928548812866
+  },
+  "epistemological_metrics": {
+    "gi_index": 156.4489016799289,
+    "effective_manifold_rank": 6.105995204854521,
+    "semantic_iou": {
+      "mean": 0.6134503483772278,
+      "min": 0.514058530330658,
+      "max": 0.6859856843948364
+    },
+    "surprisal_variance": 0.00016516063462777288,
+    "abstraction_recombination_score": 0.2051612913608551,
+    "epistemic_curvature": 0.0004752344684675336
+  },
+  "clustering": {
+    "enabled": true,
+    "best_k": 7,
+    "silhouette_score": 0.16084611415863037,
+    "davies_bouldin_index": 1.9324311181696814,
+    "cluster_sizes": {
+      "3": 96,
+      "0": 109,
+      "6": 15,
+      "1": 26,
+      "2": 24,
+      "4": 21,
+      "5": 57
+    },
+    "cluster_balance": 0.35139573070607555,
+    "all_k_results": [
+      {
+        "k": 2,
+        "silhouette": 0.14124594628810883,
+        "davies_bouldin": 2.3183056617002906,
+        "inertia": 60.55644226074219
+      },
+      {
+        "k": 3,
+        "silhouette": 0.11192913353443146,
+        "davies_bouldin": 2.5928742964448586,
+        "inertia": 55.99662780761719
+      },
+      {
+        "k": 4,
+        "silhouette": 0.1347242295742035,
+        "davies_bouldin": 2.229794794491657,
+        "inertia": 52.87643051147461
+      },
+      {
+        "k": 5,
+        "silhouette": 0.1442943662405014,
+        "davies_bouldin": 2.0777130196028097,
+        "inertia": 50.405982971191406
+      },
+      {
+        "k": 6,
+        "silhouette": 0.14420518279075623,
+        "davies_bouldin": 2.054272242408975,
+        "inertia": 48.09151840209961
+      },
+      {
+        "k": 7,
+        "silhouette": 0.16084611415863037,
+        "davies_bouldin": 1.9324311181696814,
+        "inertia": 45.57100296020508
+      },
+      {
+        "k": 8,
+        "silhouette": 0.15071427822113037,
+        "davies_bouldin": 2.074704596385617,
+        "inertia": 43.725311279296875
+      }
+    ]
+  },
+  "trajectories": {
+    "enabled": true,
+    "num_trajectories": 3,
+    "path_length": {
+      "mean": 1.0473091304302216,
+      "std": 0.011483788618708801,
+      "min": 1.0312312543392181,
+      "max": 1.0573336482048035,
+      "median": 1.053362488746643
+    },
+    "net_displacement": {
+      "mean": 0.5322726964950562,
+      "std": 0.01633323736791946,
+      "min": 0.5206255912780762,
+      "max": 0.555371105670929,
+      "median": 0.5208213925361633
+    },
+    "convergence_ratio": {
+      "mean": 0.5082248921668104,
+      "std": 0.014347323408703299,
+      "min": 0.4925799849654281,
+      "max": 0.527236456209623,
+      "median": 0.5048582353253803
+    },
+    "step_distances": {
+      "step_1_to_2": {
+        "mean": 0.5301113724708557,
+        "std": 0.02742719295314905,
+        "min": 0.49132925271987915,
+        "max": 0.5500827431678772,
+        "median": 0.5489221215248108
+      },
+      "step_2_to_3": {
+        "mean": 0.5171977579593658,
+        "std": 0.033298529202244596,
+        "min": 0.48230913281440735,
+        "max": 0.5620332360267639,
+        "median": 0.5072509050369263
+      }
+    }
+  }
+}
