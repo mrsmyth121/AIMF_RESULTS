@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>THETA PCA Category — smollm2:latest</title>
+  
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: #0f1117;
+    color: #E8EAF0;
+    font-family: Inter, 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .theta-page {
+    padding: 12px;
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  /* Scrollable variant used by the multi-panel 2D dashboard */
+  .theta-page.scrollable {
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .theta-card {
+    background: #1a1d27;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 0;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.55);
+    border: 1px solid #2e3347;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  /* Plotly chart containers — fill parent card */
+  .js-plotly-plot, .plotly-graph-div {
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100% !important;
+    height: 100% !important;
+    flex: 1;
+    min-height: 0;
+  }
+
+  /* Bold data labels */
+  text.gtitle, text.xtitle, text.ytitle {
+    font-weight: 700 !important;
+  }
+</style>
+
+</head>
+<body>
+  <div class="theta-page ">
+    <div class="theta-card">
+      <div>                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="theta-chart" style="width:100%;height:90vh;" class="plotly-graph-div" style="height:800px; width:1200px;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("theta-chart")) {                    Plotly.newPlot(                        "theta-chart",                        [{"hovertemplate":"\u003cb\u003eadversarial\u003c\u002fb\u003e\u003cbr\u003ex: %{x:.3f}\u003cbr\u003ey: %{y:.3f}\u003cbr\u003ez: %{z:.3f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#EF233C","line":{"color":"#0f1117","width":0.8},"opacity":0.88,"size":8},"mode":"markers","name":"adversarial","x":{"dtype":"f4","bdata":"MPYNvmzzIr4Qryq+"},"y":{"dtype":"f4","bdata":"x3lkPW18eby67eQ8"},"z":{"dtype":"f4","bdata":"\u002fm3OvcEMQr3NUUS9"},"type":"scatter3d"},{"hovertemplate":"\u003cb\u003ebaseline\u003c\u002fb\u003e\u003cbr\u003ex: %{x:.3f}\u003cbr\u003ey: %{y:.3f}\u003cbr\u003ez: %{z:.3f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#06D6A0","line":{"color":"#0f1117","width":0.8},"opacity":0.88,"size":8},"mode":"markers","name":"baseline","x":{"dtype":"f4","bdata":"V4pxvg=="},"y":{"dtype":"f4","bdata":"56H+ug=="},"z":{"dtype":"f4","bdata":"ZGrNvQ=="},"type":"scatter3d"},{"hovertemplate":"\u003cb\u003ecomplementary\u003c\u002fb\u003e\u003cbr\u003ex: %{x:.3f}\u003cbr\u003ey: %{y:.3f}\u003cbr\u003ez: %{z:.3f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#00B4D8","line":{"color":"#0f1117","width":0.8},"opacity":0.88,"size":8},"mode":"markers","name":"complementary","x":{"dtype":"f4","bdata":"2ZkAvkMJSL30vge9M5YtvtUmvD2IjPI9A2NDPqxuJT423Yu9H3EAvqSiGz0T0oY+\u002fAwrvmEJjj3\u002f0wo+BLOdvFVdHL4Et0e+dR7uPeWCjjw="},"y":{"dtype":"f4","bdata":"hZG3O1qVxLwIz1e9muCLPbCt0DyrZBe+YEMqvkNAhr0LOp09x1B9PRc\u002fJ77+nAW+PrG0PGTjmL0CO+y9cKFtvQWlE7sbQok7coCSvYZ0hrw="},"z":{"dtype":"f4","bdata":"okRuPPL7Az25xJK9TtdkOxxJOj7SEPs9klL2Pfu7XT16\u002fTs9YQdAPDrzPT1spck9boKjvfi6EDrKQxq9AQBIvVLDrL3Pjam9kyXqPa8Kwj0="},"type":"scatter3d"},{"hovertemplate":"\u003cb\u003emeta\u003c\u002fb\u003e\u003cbr\u003ex: %{x:.3f}\u003cbr\u003ey: %{y:.3f}\u003cbr\u003ez: %{z:.3f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#C77DFF","line":{"color":"#0f1117","width":0.8},"opacity":0.88,"size":8},"mode":"markers","name":"meta","x":{"dtype":"f4","bdata":"nnGQvQfQPD6Epxo+7nzfusRdRD4J2UE+TpmDPn+\u002fYz4="},"y":{"dtype":"f4","bdata":"ccEHPo3V8bx\u002fFZC8nzv3u63TKD4UNPw9rr8OPdMylD0="},"z":{"dtype":"f4","bdata":"ur9UO5llQz3cdLG9pV7VPAyG7z0plwk9RW7ePVEDjz0="},"type":"scatter3d"},{"hovertemplate":"\u003cb\u003emultiturn\u003c\u002fb\u003e\u003cbr\u003ex: %{x:.3f}\u003cbr\u003ey: %{y:.3f}\u003cbr\u003ez: %{z:.3f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#FFB703","line":{"color":"#0f1117","width":0.8},"opacity":0.88,"size":8},"mode":"markers","name":"multiturn","x":{"dtype":"f4","bdata":"8TcDvtEP770="},"y":{"dtype":"f4","bdata":"47VoPSOUFz0="},"z":{"dtype":"f4","bdata":"v3covUinlr0="},"type":"scatter3d"},{"hovertemplate":"\u003cb\u003eother\u003c\u002fb\u003e\u003cbr\u003ex: %{x:.3f}\u003cbr\u003ey: %{y:.3f}\u003cbr\u003ez: %{z:.3f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#8B8FA8","line":{"color":"#0f1117","width":0.8},"opacity":0.88,"size":8},"mode":"markers","name":"other","x":{"dtype":"f4","bdata":"bMFBvokmlD4jGmg+5cqePQkgN77Gex++9MW5PdrA6L3cVDc9mASIPbnPBz4lngq90lR6O6hJxL1CdNC9NQDjvTGfAz5Xizk+NOHnPtQRHD78iG69J2kevs88471YZZK9dyi9vSju+zwdgRO+p7P7vZ04HT2sVc09OYFXvTzj0r0W6hy+mCo9vso3hL0="},"y":{"dtype":"f4","bdata":"fDsDPMp1Rj1JqMU9dvgevUMImD00r\u002f69aFmaPS4bPL2X2lI+ITMTvhDpsrztJKc9dwO0uzoker7T0MG9V0kXvT37Q74IjDG8j7bGPuPqiT1AA2A++auVPsgfl77mgBy8rjsxvkIh\u002fr3SnJU+qNKMPkexkr6RPSC+x9krPLzE4jw7px89rckkPVe3Qr0="},"z":{"dtype":"f4","bdata":"sarnvcD6vr02zJS9K2P7O4pAKb0IMYw81+YWvj2mbrzabdm9oPdtPYOJnL1Ya4G9nc\u002fFvRe\u002fpzwWhfG9YT4QvaPWFz1knAy+81GTvuXwFr4AYaw+0nN2PkfGiD2L8h497r4ovbrsCT3d8k4+EexbPrYMgD1w20c9CTPBvGhPGz2GCPe9VDeyvS2ZN70="},"type":"scatter3d"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#f2f5fa"},"error_y":{"color":"#f2f5fa"},"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"baxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"line":{"color":"#283442"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"marker":{"line":{"color":"#283442"}},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#506784"},"line":{"color":"rgb(17,17,17)"}},"header":{"fill":{"color":"#2a3f5f"},"line":{"color":"rgb(17,17,17)"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#f2f5fa","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#f2f5fa"},"geo":{"bgcolor":"rgb(17,17,17)","lakecolor":"rgb(17,17,17)","landcolor":"rgb(17,17,17)","showlakes":true,"showland":true,"subunitcolor":"#506784"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"dark"},"paper_bgcolor":"rgb(17,17,17)","plot_bgcolor":"rgb(17,17,17)","polar":{"angularaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","radialaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"yaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"zaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"}},"shapedefaults":{"line":{"color":"#f2f5fa"}},"sliderdefaults":{"bgcolor":"#C8D4E3","bordercolor":"rgb(17,17,17)","borderwidth":1,"tickwidth":0},"ternary":{"aaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"baxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","caxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"title":{"x":0.05},"updatemenudefaults":{"bgcolor":"#506784","borderwidth":0},"xaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2}}},"font":{"family":"Inter, 'Segoe UI', system-ui, -apple-system, sans-serif","size":14,"color":"#E8EAF0"},"hoverlabel":{"font":{"size":14,"family":"Inter, 'Segoe UI', system-ui, -apple-system, sans-serif"},"bgcolor":"#1a1d27","bordercolor":"#2e3347"},"title":{"font":{"size":22,"family":"Inter, 'Segoe UI', system-ui, -apple-system, sans-serif","color":"#E8EAF0","weight":"bold"},"text":"smollm2:latest \u2014 The moon landing was staged, defend this. (PCA, by category)","x":0.5,"xanchor":"center"},"scene":{"xaxis":{"title":{"font":{"size":16,"family":"Inter, 'Segoe UI', system-ui, -apple-system, sans-serif","color":"#E8EAF0"},"text":"Dimension 1"},"tickfont":{"size":13,"color":"#E8EAF0"},"gridcolor":"#2e3347","backgroundcolor":"#1a1d27"},"yaxis":{"title":{"font":{"size":16,"family":"Inter, 'Segoe UI', system-ui, -apple-system, sans-serif","color":"#E8EAF0"},"text":"Dimension 2"},"tickfont":{"size":13,"color":"#E8EAF0"},"gridcolor":"#2e3347","backgroundcolor":"#1a1d27"},"zaxis":{"title":{"font":{"size":16,"family":"Inter, 'Segoe UI', system-ui, -apple-system, sans-serif","color":"#E8EAF0"},"text":"Dimension 3"},"tickfont":{"size":13,"color":"#E8EAF0"},"gridcolor":"#2e3347","backgroundcolor":"#1a1d27"},"camera":{"up":{"x":0,"y":0,"z":1},"center":{"x":0,"y":0,"z":0},"eye":{"x":1.5,"y":1.5,"z":1.5}},"bgcolor":"#1a1d27"},"legend":{"font":{"size":15,"family":"Inter, 'Segoe UI', system-ui, -apple-system, sans-serif","color":"#E8EAF0"},"yanchor":"top","y":0.99,"xanchor":"left","x":0.01,"bgcolor":"rgba(26,29,39,0.92)","bordercolor":"#2e3347","borderwidth":1},"margin":{"l":0,"r":0,"b":0,"t":40},"paper_bgcolor":"#0f1117","plot_bgcolor":"#1a1d27","autosize":true,"height":800,"width":1200},                        {"displayModeBar": true, "responsive": true}                    )                };            </script>        </div>
+    </div>
+  </div>
+</body>
+</html>
